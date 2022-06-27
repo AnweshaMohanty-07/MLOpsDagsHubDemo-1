@@ -27,3 +27,21 @@ Step 3:
     export MLFLOW_TRACKING_USERNAME=sashicds
     export MLFLOW_TRACKING_PASSWORD=$DAGSHUB_TOKEN
 
+# Install Docker/Jenkins
+# Docker
+     https://docs.docker.com/desktop/linux/install/ubuntu/
+
+# Jenkins     
+     $ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins:ltsjenkins:lts
+     
+     $ docker ps
+     $ docker logs d899d573f167 (CONTAINER ID obtained from docker ps)
+      ubuntu : /var/snap/docker/common/var-lib-docker
+      
+     Open http://localhost:8080 & enter the password
+     Install default packages
+     Create First Admin User
+     Jenkins URL: http://localhost:8080/
+
+
+     
