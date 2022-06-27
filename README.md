@@ -32,7 +32,7 @@ Step 3:
      https://docs.docker.com/desktop/linux/install/ubuntu/
 
 # Jenkins     
-     $ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins:ltsjenkins:lts
+     $ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
      
      $ docker ps
      $ docker logs d899d573f167 (CONTAINER ID obtained from docker ps)
