@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                echo 'Building MLOps at scale Demo ...'
+                echo 'Testing MLOps at scale Demo ...'
             }
         }
     }
