@@ -1,8 +1,9 @@
 setup:
-	python3 -m venv ~/.MLOpsDagsHubDemo
-	#source ~/.MLOpsDagsHubDemo/bin/activate
+	python3 -m venv ../.MLOpsDagsHubDemo
+	source ../.MLOpsDagsHubDemo/bin/activate
 
 install:
+	dvc pull -r origin
 	pip install --upgrade pip &&\
 	  pip install -r requirements.txt
 
