@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            echo 'Building MLOps at scale Demo ...'
-            sh 'make install'
+            echo 'Building MLOps at scale Demo Updated...'
           }
         }
         stage('Test'){
