@@ -1,11 +1,11 @@
 setup:
 	python3 -m venv ../.MLOpsDagsHubDemo
-	source ../.MLOpsDagsHubDemo/bin/activate
+	# source ../.MLOpsDagsHubDemo/bin/activate
 
 install:
-	dvc pull -r origin
 	pip install --upgrade pip &&\
 	  pip install -r requirements.txt
+	dvc pull -r origin
 
 check:
 	python3 -m pytest -vv -cov=hellotest ./test/test.py
